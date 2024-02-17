@@ -1,23 +1,9 @@
-/* Header Styles */
-.navbar-brand {
-    font-size: 25px;
-    font-weight: bold;
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
 }
 
-.navbar-nav {
-    float: right;
-}
-
-.nav-link {
-    font-size: 18px;
-}
-
-/* Footer Styles */
-footer.bg-white {
-    border-top: 1px solid #ddd; /* Adds a horizontal line above the footer */
-}
-
-/* Main Body/Resume Section Styles */
 .container {
     max-width: 1140px; /* Bootstrap default for large containers */
 }
@@ -27,35 +13,84 @@ h2.text-center {
     margin-bottom: 1rem;
 }
 
+/* Header Styles */
+.navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #5a5a5a;
+    font-size: 18px;
+}
+
+/* Main Body Section Styles */
+.resume-section {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
 h3 {
     font-size: 22px;
-    color: #333;
-    margin-bottom: 0.5rem;
+    color: #5a5a5a;
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.work-experience h4, .education h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 0.5rem;
+/* Job Title Styles for Work Experience and Education */
+.work-experience h4, .education h4, .job h4 {
+    font-weight: 600;
+    color: #6c757d;
+    font-size: 18px; /* Adjusted to be the same as h4 for consistency */
+    margin-bottom: 5px;
 }
 
-p {
-    font-size: 16px;
-    color: #666;
+/* Job Details Styles for Work Experience and Education */
+.job .company, .job .time, .job .details,
+.education .company, .education .time, .education .details {
+    color: #6c757d;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
-ul {
+.job {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd; /* Adds a line under each job */
+}
+
+/* Skills Section Styles */
+.skills-section ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-ul li {
-    font-size: 16px;
+.skills-section ul li {
     color: #666;
+    font-size: 16px;
     margin-bottom: 0.25rem;
 }
 
-/* Responsive adjustments */
+/* Footer Styles */
+footer.bg-white {
+    padding: 20px 0;
+}
+
+footer.bg-white h3 {
+    font-size: 18px; /* Ensure footer h3 matches other h3 sizes if needed */
+    color: #333; /* Match the global text color */
+    border-bottom: none;
+}
+
+.col-12.col-md-4 img {
+    width: 30px; /* Adjusts the width to make the logos smaller */
+    height: 30px; /* Adjusts the height to make the logos smaller */
+}
+
+/* Responsive Adjustments */
 @media (max-width: 992px) {
     .navbar-brand {
         font-size: 20px;
@@ -76,11 +111,12 @@ ul li {
         font-size: 20px;
     }
 
-    .work-experience h4, .education h4, ul li {
+    .job h4, .education h4, .skills-section ul li {
         font-size: 16px;
     }
 
-    p {
+    .job .company, .job .time, .job .details, 
+    .education h4, .education p {
         font-size: 14px;
     }
 }
@@ -108,11 +144,12 @@ ul li {
         font-size: 18px;
     }
 
-    .work-experience h4, .education h4, ul li {
+    .job h4, .education h4, .skills-section ul li {
         font-size: 14px;
     }
 
-    p {
+    .job .company, .job .time, .job .details, 
+    .education h4, .education p {
         font-size: 12px;
     }
 }
