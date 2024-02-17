@@ -1,0 +1,97 @@
+.custom-navbar-brand {
+    position: relative;
+    margin-left: -150px; /* Adjust if necessary */
+    padding-left: 2em; /* Provide enough space for the larger dot */
+    font-weight: bold;
+}
+.custom-navbar-brand h3{
+    font-weight: bold;
+
+}
+
+
+
+.custom-navbar-nav {
+    float: right;
+    margin-right: -150px; /* Moves the navigation links further to the right */
+}
+
+/* Profile image adjustments */
+#profile-image {
+    width: 400px; /* Adjusted size */
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: calc(-100px - 3em); /* Shift to the left including dot size */
+}
+
+/* Button adjustments */
+.btn-circle {
+    border-radius: 50%;
+    width: 120px; /* Reduced size */
+    height: 120px;
+    padding: 0;
+    line-height: 120px; /* Adjusted for vertical centering */
+    border: 2px solid grey;
+    font-size: 18px; /* Slightly smaller font */
+    margin: 10px;
+}
+
+.col-12.col-md-4 img {
+    width: 30px; /* Adjusts the width to make the logos smaller */
+    height: 30px; /* Adjusts the height to make the logos smaller */
+}
+
+.nav-item {
+    font-size: 18px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .custom-navbar-brand {
+        margin-left: 0; /* Resets margin for smaller screens */
+        font-size: 20px; /* Smaller font for smaller screens */
+        text-align: center;
+        width: 100%;
+    }
+
+    .custom-navbar-nav {
+        margin-right: 0; /* Resets margin for smaller screens */
+        float: none;
+        text-align: center;
+    }
+
+    #profile-image {
+        width: 250px; /* Smaller image for smaller screens */
+        height: 250px;
+        margin: 0 auto; /* Center the image */
+    }
+
+    .btn-circle {
+        width: 100px; /* Smaller buttons for smaller screens */
+        height: 100px;
+        line-height: 100px; /* Adjusted for vertical centering */
+        font-size: 15px; /* Smaller font for smaller buttons */
+        margin: 5px; /* Less space between buttons */
+    }
+
+    .col-12.col-md-4 img {
+        width: 20px; /* Even smaller logos for smaller screens */
+        height: 20px;
+    }
+
+    .nav-item {
+        font-size: 16px; /* Smaller font for nav items on smaller screens */
+    }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+    .custom-navbar-brand {
+        font-size: 18px; /* Even smaller font size for very small screens */
+    }
+
+    .nav-item {
+        font-size: 14px; /* Further reduce font size for nav items */
+    }
+}
