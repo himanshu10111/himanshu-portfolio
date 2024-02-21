@@ -9,6 +9,12 @@
 
 }
 
+.custom-navbar-brand {
+    position: relative;
+    margin-left: -200px; /* Increased from -150px to -200px to shift text further left */
+    padding-left: 2em; /* Provide enough space for the larger dot */
+    font-weight: bold;
+}
 
 
 .custom-navbar-nav {
@@ -93,5 +99,28 @@
 
     .nav-item {
         font-size: 14px; /* Further reduce font size for nav items */
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-navbar-nav {
+        margin-right: 0; /* Resets the margin to align links properly */
+        float: none;
+        text-align: center;
+    }
+    
+    .nav-link {
+        padding: 0.5rem 1rem; /* Adjust padding to ensure clickable area is adequate */
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-navbar-nav {
+        /* Further adjustments if needed for very small screens */
+    }
+    
+    .nav-item {
+        display: block; /* Stack nav items vertically */
+        text-align: center; /* Center-align the text for each nav item */
     }
 }

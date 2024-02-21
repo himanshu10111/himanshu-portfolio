@@ -4,6 +4,30 @@ body {
     color: #333;
 }
 
+/* Work Experience Section Styles */
+.work-experience h3,
+.work-experience .job h4,
+.work-experience .job .company,
+.work-experience .job .time,
+.work-experience .job .location,
+.work-experience .job .details {
+    color: #5a5a5a; /* Gray color similar to the Education section */
+}
+
+/* Skills & Expertise Section Styles */
+.skills-section h3,
+.skills-section ul li {
+    color: #5a5a5a; /* Gray color for consistency */
+}
+
+/* Adjusting the color for general text to match the desired gray and black theme */
+.resume-section .details,
+.resume-section .company,
+.resume-section .time,
+.resume-section .location {
+    color: #6c757d; /* Lighter gray for details text, you can adjust this as needed */
+}
+
 .container {
     max-width: 1140px; /* Bootstrap default for large containers */
 }
@@ -14,14 +38,29 @@ h2.text-center {
 }
 
 /* Header Styles */
-.navbar-brand {
+.navbar-brand { 
     font-size: 25px;
-    font-weight: bold;
+    font-weight: normal;
 }
 
+/* Hover effect for navigation links */
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #000000; /* Black color */
+    text-decoration: none; /* Removes any text-decoration like underline */
+}
 .navbar-light .navbar-nav .nav-link {
     color: #5a5a5a;
     font-size: 18px;
+}
+
+.navbar-brand {
+    color: #5a5a5a !important; /* This matches the default nav-link color */
+}
+
+/* Ensure navbar-brand color doesn't change on hover */
+.navbar-brand:hover {
+    color: #5a5a5a !important; /* Keeps the color consistent on hover */
+    text-decoration: none; /* Optional: Removes underline effect on hover */
 }
 
 /* Main Body Section Styles */
@@ -44,12 +83,12 @@ h3 {
 .work-experience h4, .education h4, .job h4 {
     font-weight: 600;
     color: #6c757d;
-    font-size: 18px; /* Adjusted to be the same as h4 for consistency */
+    font-size: 18px;
     margin-bottom: 5px;
 }
 
 /* Job Details Styles for Work Experience and Education */
-.job .company, .job .time, .job .details,
+.job .company, .job .time, .job .details, .location,
 .education .company, .education .time, .education .details {
     color: #6c757d;
     font-size: 14px;
@@ -59,7 +98,7 @@ h3 {
 .job {
     margin-bottom: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #ddd; /* Adds a line under each job */
+    border-bottom: 1px solid #ddd;
 }
 
 /* Skills Section Styles */
@@ -80,14 +119,14 @@ footer.bg-white {
 }
 
 footer.bg-white h3 {
-    font-size: 18px; /* Ensure footer h3 matches other h3 sizes if needed */
-    color: #333; /* Match the global text color */
+    font-size: 18px;
+    color: #333;
     border-bottom: none;
 }
 
 .col-12.col-md-4 img {
-    width: 30px; /* Adjusts the width to make the logos smaller */
-    height: 30px; /* Adjusts the height to make the logos smaller */
+    width: 30px;
+    height: 30px;
 }
 
 /* Responsive Adjustments */
