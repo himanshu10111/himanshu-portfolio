@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Himanshu Doye - Software engineer</title>
+    <title>Himanshu Doye - Software Engineer</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -11,9 +11,17 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
-            <a class="navbar-brand custom-navbar-brand" href="#"> <h3>Himanshu - Software Engineer</h3></a>
-            <div>
-                <ul class="navbar-nav custom-navbar-nav ml-auto">
+            <!-- Brand/logo -->
+            <a class="navbar-brand custom-navbar-brand" href="#">
+                <h3>Himanshu - Software Engineer</h3>
+            </a>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav custom-navbar-nav ml-auto mt-2 mt-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="./pages/resume.html">Resume</a>
                     </li>
@@ -31,28 +39,29 @@
     <section class="text-center my-5">
         <div class="container">
             <div class="row align-items-center">
+                <!-- Profile image -->
                 <div class="col-md-5">
-                    <img src="./assets/images/himanshu.jpg" alt="Nicol Rider" class="rounded-circle img-fluid" id="profile-image">
+                    <img src="./assets/images/himanshu.jpg" alt="Himanshu Doye" class="rounded-circle img-fluid" id="profile-image">
                 </div>
+                <!-- About me text -->
                 <div class="col-md-7 text-md-left">
                     <h1>Hello</h1>
                     <p class="lead">A Bit About Me</p>
                     <p>Innovative Developer with expertise in Corda R3 DLT, Spring Boot, and MySQL. Proficient in Version Control and Azure, I excel in creating user-focused applications. My passion for blockchain and cloud technologies drives me to deliver robust, cutting-edge solutions in dynamic team settings.</p>
                     <div class="my-4">
-                        <a href="./pages/resume.html" class="btn btn-circle btn-warning">Resume</a>
-                        <a href="./pages/project.html" class="btn btn-circle btn-danger">Projects</a>
-                        <a href="#" class="btn btn-circle btn-info">Contact</a>
+                        <a href="./pages/resume.html" class="btn btn-warning">Resume</a>
+                        <a href="./pages/project.html" class="btn btn-danger">Projects</a>
+                        <a href="./pages/contact.html" class="btn btn-info">Contact</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
     <footer class="bg-white py-4">
-            
         <div class="container text-center">
             <div class="row">
+                <!-- Contact info -->
                 <div class="col-12 col-md-4 mb-3 mb-md-0">
                     <h3>Phone</h3>
                     <p>+91 8407928568</p>
@@ -63,6 +72,7 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <h3>Follow Me</h3>
+                    <!-- Social icons -->
                     <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
                         <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn" />
                     </a>
@@ -71,6 +81,7 @@
                     </a>
                 </div>
             </div>
+            <!-- Copyright -->
             <div class="row mt-3">
                 <div class="col-12">
                     <p>© 2024 By Himanshu Doye</p>
@@ -79,6 +90,7 @@
         </div>
     </footer>
 
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
